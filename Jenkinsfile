@@ -5,7 +5,7 @@ pipeline {
        
         stage('Clone Master Branch'){
 	     steps{
-		 git url: 'https://github.com/khouloudBenAli/devops.git'
+		 git url: 'git@github.com:khouloudBenAli/devops-project.git'
 	      }
         }
         
