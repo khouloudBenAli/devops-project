@@ -3,19 +3,12 @@ pipeline {
 
     stages {
         
-        stage('Build with Maven'){
+        stage('hello'){
 	     steps{
-	     	 echo "MAVEN"
-		 sh 'mvn package'
+	     	 echo "hello"
+		 
 	      }
         }
-        stage('Build docker'){
-	     steps{
-		 echo "DOCKERIZE"
-		 sh "pwd"
-		 sh "ls"
-		 sh 'docker build -t khouloudbenali/devops:1.0 .'
-	      }
-        }
+   
     }
 }
